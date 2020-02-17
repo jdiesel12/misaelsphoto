@@ -439,7 +439,7 @@ i:hover {
   width: 80%;
   height: auto;
   margin: auto;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 1);
   border: 1px solid black;
   border-radius: 19px;
   color: white;
