@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="fav-icon" href="./resources/images/MisaelsPhoto_SecondaryMarks_02_White.svg" type="image/svg+xml">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script src="https://kit.fontawesome.com/4e65935b34.js" crossorigin="anonymous"></script>
     <title>Misaels Photo - Utah Wedding Photographer</title>
   </head>
@@ -113,6 +114,17 @@
     <script src="./resources/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./resources/js/main.js"></script>
+    <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+      </script>
     <script>
             AOS.init({
                 easing: 'ease-out-back',
